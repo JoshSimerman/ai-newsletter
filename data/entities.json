@@ -1,0 +1,15 @@
+{
+  "anthropic": ["anthropic", "claude", "claude code", "claude ai", "sonnet", "opus", "haiku", "claude max", "claude pro"],
+  "openai": ["openai", "chatgpt", "gpt-4", "gpt-4o", "gpt-5", "dall-e", "sora", "codex"],
+  "google": ["google", "gemini", "deepmind", "gemma", "google ai"],
+  "meta": ["meta", "llama", "meta ai"],
+  "microsoft": ["microsoft", "copilot", "azure ai", "github copilot"],
+  "apple": ["apple", "apple intelligence"],
+  "mistral": ["mistral", "mixtral", "mistral ai"],
+  "stability": ["stability ai", "stable diffusion"],
+  "xai": ["xai", "grok", "x ai"],
+  "perplexity": ["perplexity", "perplexity ai"],
+  "anthropic-dream": ["dream", "claude dream"],
+  "mcp": ["mcp", "model context protocol"],
+  "huggingface": ["hugging face", "huggingface", "transformers"]
+}

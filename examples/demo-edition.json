@@ -1,0 +1,344 @@
+{
+  "_comment": "Fictional demo data. Every company, model, person, and story below is invented; all links point to example.com. Used by `npm run demo`, `npm run screenshots`, and the renderer tests.",
+  "date": "2026-01-15",
+  "sections": {
+    "02-executive-summary": {
+      "section_key": "02-executive-summary",
+      "research_date": "2026-01-15",
+      "item_count": 1,
+      "items": [
+        {
+          "id": "exec-summary-2026-01-15",
+          "title": "Today's Briefing",
+          "summary_paragraphs": [
+            "This is a demo edition: every story, company, and model in it is fictional. Northwind Labs opens its Aster-4 model to all API customers with a 1M-token context window, while Helix AI answers with a cheaper Nimbus 3 Mini tier aimed at high-volume agent workloads.",
+            "On the tooling side, the Claude Code team ships background task queues and a plugin permissions audit, and the open-source Tidepool inference server crosses 20,000 GitHub stars after adding speculative decoding for consumer GPUs.",
+            "Money keeps flowing into agent infrastructure: Lattice Robotics raises a $120M Series B to scale its warehouse humanoid pilot, and Quarry, an eval-tooling startup, lands a $40M round led by Example Ventures."
+          ],
+          "tags": ["demo"]
+        }
+      ],
+      "editorial_notes": "Demo fixture."
+    },
+    "03-top-stories": {
+      "section_key": "03-top-stories",
+      "research_date": "2026-01-15",
+      "item_count": 2,
+      "items": [
+        {
+          "id": "northwind-aster-4-ga",
+          "title": "Northwind Labs opens Aster-4 to all API customers with 1M-token context",
+          "url": "https://example.com/news/northwind-aster-4-general-availability",
+          "source": "Example Wire",
+          "published_date": "2026-01-15",
+          "summary": "Northwind Labs made Aster-4 generally available after a three-month preview. The release doubles the context window and cuts long-context pricing by 40%.",
+          "summary_bullets": [
+            "**Context** — 1M tokens, with prompt caching on inputs > 32K tokens",
+            "**Pricing** — $2 / $8 per million input/output tokens",
+            "**Availability** — API and console today; cloud marketplaces next month"
+          ],
+          "relevance_score": 10,
+          "tags": ["aster-4", "northwind", "api"],
+          "content_type": "release",
+          "source_tier": 1
+        },
+        {
+          "id": "helix-nimbus-3-mini",
+          "title": "Helix AI launches Nimbus 3 Mini for high-volume agent workloads",
+          "url": "https://example.com/news/helix-nimbus-3-mini",
+          "source": "Example Tech Daily",
+          "published_date": "2026-01-14",
+          "summary": "Helix AI released Nimbus 3 Mini, a smaller tier priced for agents that make thousands of tool calls per task. Early benchmarks put it within 5 points of Nimbus 3 on coding evals.",
+          "relevance_score": 9,
+          "tags": ["nimbus-3", "helix-ai", "agents"],
+          "content_type": "release",
+          "source_tier": 2
+        }
+      ],
+      "editorial_notes": "Demo fixture."
+    },
+    "04-claude-anthropic": {
+      "section_key": "04-claude-anthropic",
+      "research_date": "2026-01-15",
+      "item_count": 2,
+      "items": [
+        {
+          "id": "demo-claude-code-background-queues",
+          "title": "Claude Code adds background task queues and a plugin permissions audit",
+          "url": "https://example.com/changelog/claude-code-demo-release",
+          "source": "Example Changelog",
+          "published_date": "2026-01-15",
+          "summary": "A fictional Claude Code release queues long-running tasks in the background and adds a command that lists every permission each installed plugin requests.",
+          "summary_bullets": [
+            "**Queues** — run up to 4 background tasks & review results later",
+            "**Audit** — `/plugins audit` flags plugins requesting network or shell access",
+            "**Fixes** — faster resume for sessions with > 500 messages"
+          ],
+          "relevance_score": 9,
+          "tags": ["claude-code", "release"],
+          "content_type": "release",
+          "source_tier": 1
+        },
+        {
+          "id": "demo-claude-api-batch-discount",
+          "title": "Claude API extends batch discount to prompt-cached requests",
+          "url": "https://example.com/news/claude-api-batch-cache-demo",
+          "source": "Example Developer News",
+          "published_date": "2026-01-14",
+          "summary": "In this fictional update, batch requests that hit the prompt cache now receive both discounts, lowering the cost of nightly evaluation jobs.",
+          "relevance_score": 7,
+          "tags": ["claude-api", "pricing"],
+          "content_type": "announcement",
+          "source_tier": 2
+        }
+      ],
+      "editorial_notes": "Demo fixture."
+    },
+    "05-openai": {
+      "section_key": "05-openai",
+      "research_date": "2026-01-15",
+      "item_count": 1,
+      "items": [
+        {
+          "id": "demo-chatgpt-shared-projects",
+          "title": "ChatGPT adds shared project memory for team workspaces",
+          "url": "https://example.com/news/chatgpt-shared-projects-demo",
+          "source": "Example Tech Daily",
+          "published_date": "2026-01-14",
+          "summary": "A fictional ChatGPT update lets team members share project-level memory and files, with admin controls for retention.",
+          "relevance_score": 7,
+          "tags": ["chatgpt", "teams"],
+          "content_type": "announcement",
+          "source_tier": 2
+        }
+      ],
+      "editorial_notes": "Demo fixture."
+    },
+    "06-new-models": {
+      "section_key": "06-new-models",
+      "research_date": "2026-01-15",
+      "item_count": 2,
+      "items": [
+        {
+          "id": "orchard-7b-coder",
+          "title": "Orchard releases 7B coding model that runs on a single 16GB GPU",
+          "url": "https://example.com/models/orchard-7b-coder",
+          "source": "Example Model Hub",
+          "published_date": "2026-01-14",
+          "summary": "Orchard's open-weight 7B coder scores 61% on a fictional repo-level benchmark, within reach of much larger models.",
+          "details": { "parameter_count": "7B", "license": "Apache-2.0", "availability": "Open weights" },
+          "relevance_score": 8,
+          "tags": ["open-weights", "coding"],
+          "content_type": "release",
+          "source_tier": 2
+        },
+        {
+          "id": "aster-4-benchmarks",
+          "title": "Aster-4 tops fictional long-context retrieval benchmark at 1M tokens",
+          "url": "https://example.com/benchmarks/aster-4-long-context",
+          "source": "Example Benchmarks",
+          "published_date": "2026-01-15",
+          "summary": "Independent testers report 94% needle-retrieval accuracy at the full 1M-token window.",
+          "relevance_score": 7,
+          "tags": ["benchmarks", "long-context"],
+          "content_type": "analysis",
+          "source_tier": 3
+        }
+      ],
+      "editorial_notes": "Demo fixture."
+    },
+    "14-model-leaderboard": {
+      "section_key": "14-model-leaderboard",
+      "research_date": "2026-01-15",
+      "arena_top_10": [
+        { "rank": 1, "model": "Aster-4", "elo": 1512, "provider": "Northwind Labs" },
+        { "rank": 2, "model": "Nimbus 3 Pro", "elo": 1498, "provider": "Helix AI" },
+        { "rank": 3, "model": "Quill Ultra", "elo": 1487, "provider": "Paperkite" },
+        { "rank": 4, "model": "Nimbus 3", "elo": 1471, "provider": "Helix AI" },
+        { "rank": 5, "model": "Aster-3.5", "elo": 1462, "provider": "Northwind Labs" }
+      ],
+      "open_top_5": [
+        { "rank": 1, "model": "Orchard 70B", "elo": 1440, "provider": "Orchard" },
+        { "rank": 2, "model": "Tidewater 32B", "elo": 1421, "provider": "Tidewater Collective" },
+        { "rank": 3, "model": "Orchard 7B Coder", "elo": 1388, "provider": "Orchard" }
+      ],
+      "openrouter_top_10": [
+        { "rank": 1, "model": "Nimbus 3 Mini", "tokens": "9.1T (30-day)", "provider": "Helix AI" },
+        { "rank": 2, "model": "Aster-4", "tokens": "7.4T (30-day)", "provider": "Northwind Labs" },
+        { "rank": 3, "model": "Orchard 70B", "tokens": "3.2T (30-day)", "provider": "Orchard" },
+        { "rank": 4, "model": "Quill Ultra", "tokens": "2.8T (30-day)", "provider": "Paperkite" }
+      ],
+      "editorial_note": "Fictional rankings for the demo edition."
+    },
+    "07-local-ai": {
+      "section_key": "07-local-ai",
+      "research_date": "2026-01-15",
+      "item_count": 1,
+      "items": [
+        {
+          "id": "tidepool-speculative-decoding",
+          "title": "Tidepool adds speculative decoding for consumer GPUs, doubling tokens/sec",
+          "url": "https://example.com/repos/tidepool/releases/v0.9.0",
+          "source": "Example Git Host",
+          "published_date": "2026-01-15",
+          "summary": "The Tidepool local inference server now pairs a draft model with the main model automatically, reaching 2.1× throughput on 24GB cards.",
+          "details": { "version": "v0.9.0" },
+          "relevance_score": 8,
+          "tags": ["local-inference", "gpu"],
+          "content_type": "release",
+          "source_tier": 1
+        }
+      ],
+      "editorial_notes": "Demo fixture."
+    },
+    "08-business-deals": {
+      "section_key": "08-business-deals",
+      "research_date": "2026-01-15",
+      "item_count": 1,
+      "items": [
+        {
+          "id": "quarry-series-a",
+          "title": "Quarry raises $40M Series A to build evaluation tooling for agent teams",
+          "url": "https://example.com/news/quarry-series-a",
+          "source": "Example Business Journal",
+          "published_date": "2026-01-14",
+          "summary": "Quarry, which runs regression suites against agent transcripts, will use the round to add on-prem deployment.",
+          "details": { "deal_type": "Series A", "amount": "$40M", "valuation": "$310M", "lead_investors": ["Example Ventures"] },
+          "relevance_score": 7,
+          "tags": ["funding", "evals"],
+          "content_type": "funding",
+          "source_tier": 2
+        }
+      ],
+      "editorial_notes": "Demo fixture."
+    },
+    "09-dev-tools": {
+      "section_key": "09-dev-tools",
+      "research_date": "2026-01-15",
+      "item_count": 2,
+      "items": [
+        {
+          "id": "mcp-inspector-demo",
+          "title": "Open-source MCP inspector records and replays tool calls for debugging",
+          "url": "https://example.com/repos/mcp-replay",
+          "source": "Example Git Host",
+          "published_date": "2026-01-14",
+          "summary": "mcp-replay proxies any MCP server, logs every request and response, and replays sessions deterministically in tests.",
+          "relevance_score": 8,
+          "tags": ["mcp", "debugging"],
+          "content_type": "tool",
+          "source_tier": 2
+        },
+        {
+          "id": "ci-agent-review-demo",
+          "title": "CI provider adds native agent review step with per-repo token budgets",
+          "url": "https://example.com/blog/agent-review-step",
+          "source": "Example CI Blog",
+          "published_date": "2026-01-13",
+          "summary": "Teams can now gate merges on an agent code review, capped by a monthly token budget per repository.",
+          "relevance_score": 6,
+          "tags": ["ci", "code-review"],
+          "content_type": "announcement",
+          "source_tier": 2
+        }
+      ],
+      "editorial_notes": "Demo fixture."
+    },
+    "10-open-source": {
+      "section_key": "10-open-source",
+      "research_date": "2026-01-15",
+      "item_count": 1,
+      "items": [
+        {
+          "id": "tidepool-20k-stars",
+          "title": "Tidepool inference server passes 20,000 stars after speculative decoding release",
+          "url": "https://example.com/repos/tidepool",
+          "source": "Example Git Host",
+          "published_date": "2026-01-15",
+          "summary": "The project gained 3,000 stars this week and merged its first contributions from two hardware vendors.",
+          "details": { "stars": 20412, "language": "Rust", "license": "MIT" },
+          "relevance_score": 7,
+          "tags": ["trending", "inference"],
+          "content_type": "tool",
+          "source_tier": 2
+        }
+      ],
+      "editorial_notes": "Demo fixture."
+    },
+    "13-openclaw": {
+      "section_key": "13-openclaw",
+      "research_date": "2026-01-15",
+      "item_count": 1,
+      "items": [
+        {
+          "id": "demo-openclaw-release",
+          "title": "OpenClaw demo release adds per-channel rate limits and audit logs",
+          "url": "https://example.com/repos/openclaw-demo/releases",
+          "source": "Example Git Host",
+          "published_date": "2026-01-14",
+          "summary": "A fictional OpenClaw release adds per-channel rate limits and structured audit logs for self-hosted deployments.",
+          "relevance_score": 6,
+          "tags": ["openclaw", "self-hosted"],
+          "content_type": "release",
+          "source_tier": 1
+        }
+      ],
+      "editorial_notes": "Demo fixture."
+    },
+    "15-humanoid-robotics": {
+      "section_key": "15-humanoid-robotics",
+      "research_date": "2026-01-15",
+      "item_count": 1,
+      "items": [
+        {
+          "id": "lattice-series-b",
+          "title": "Lattice Robotics raises $120M to scale warehouse humanoid pilot to 500 units",
+          "url": "https://example.com/news/lattice-robotics-series-b",
+          "source": "Example Robotics Report",
+          "published_date": "2026-01-15",
+          "summary": "Lattice will expand a six-month picking pilot across three distribution centers.",
+          "relevance_score": 7,
+          "tags": ["humanoids", "funding"],
+          "content_type": "funding",
+          "source_tier": 2
+        }
+      ],
+      "editorial_notes": "Demo fixture."
+    },
+    "11-youtube": {
+      "section_key": "11-youtube",
+      "research_date": "2026-01-15",
+      "item_count": 3,
+      "items": [
+        {
+          "id": "yt-demo-1",
+          "title": "Building an MCP server in 20 minutes",
+          "url": "https://example.com/videos/mcp-server-20-min",
+          "source": "Demo Dev Channel",
+          "published_at": "2026-01-15T14:00:00Z",
+          "details": { "channel_name": "Demo Dev Channel", "duration": "21:04", "thumbnail_url": "https://example.com/thumbs/1.jpg" },
+          "relevance_score": 8
+        },
+        {
+          "id": "yt-demo-2",
+          "title": "Aster-4 vs Nimbus 3: long-context showdown",
+          "url": "https://example.com/videos/aster-vs-nimbus",
+          "source": "Example AI Reviews",
+          "published_at": "2026-01-15T09:30:00Z",
+          "details": { "channel_name": "Example AI Reviews", "duration": "14:52", "thumbnail_url": "https://example.com/thumbs/2.jpg" },
+          "relevance_score": 7
+        },
+        {
+          "id": "yt-demo-3",
+          "title": "Running a 7B coder locally on a 16GB GPU",
+          "url": "https://example.com/videos/local-7b-coder",
+          "source": "Sample Homelab",
+          "published_at": "2026-01-14T18:15:00Z",
+          "details": { "channel_name": "Sample Homelab", "duration": "11:37", "thumbnail_url": "https://example.com/thumbs/3.jpg" },
+          "relevance_score": 6
+        }
+      ],
+      "editorial_notes": "Demo fixture."
+    }
+  }
+}

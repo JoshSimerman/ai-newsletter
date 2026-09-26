@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+
+# Secrets and local config (copy .env.example to .env.local)
+.env
+.env.*
+!.env.example
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+.wrangler/
+
+# Pipeline scratch, build output, logs
+tmp/
+dist/
+*.log
+
+# Editor, OS, and agent-local state
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.claude/settings.local.json
+.claude/scheduled_tasks.lock
+.remember/
+.superpowers/
+.firecrawl/
+
+# Playwright
+test-results/
+playwright-report/

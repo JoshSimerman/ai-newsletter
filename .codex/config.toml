@@ -1,0 +1,3 @@
+[mcp_servers.sift-d1]
+command = "node"
+args = ["scripts/mcp-server.mjs"]

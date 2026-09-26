@@ -1,0 +1,34 @@
+{
+  "name": "sift-ai-digest",
+  "version": "1.0.0",
+  "description": "Sift: a self-hosted daily AI news digest. Claude Code sub-agents research and write, a deterministic Node renderer builds the HTML, Cloudflare D1 dedups, Cloudflare Pages hosts.",
+  "private": true,
+  "license": "AGPL-3.0-only",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test scripts/shared/*.test.mjs",
+    "init-db": "node scripts/d1-init.mjs",
+    "update-index": "node scripts/update-index.mjs",
+    "demo": "node scripts/render-demo.mjs",
+    "screenshots": "node scripts/screenshots.mjs"
+  },
+  "keywords": [
+    "ai",
+    "newsletter",
+    "daily-digest",
+    "llm",
+    "claude",
+    "claude-code",
+    "multi-agent",
+    "cloudflare-pages",
+    "cloudflare-d1"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.28.0"
+  },
+  "devDependencies": {
+    "playwright": "^1.63.0"
+  }
+}
